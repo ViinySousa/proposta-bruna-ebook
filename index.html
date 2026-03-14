@@ -4,308 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Proposta Comercial · Solaré Beauty</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" href="favicon.ico">
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-  background: #f0f0ebf1;
-  color: #1C1A17;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
   min-height: 100vh;
-}
-.wrap { max-width: 680px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
-.header { text-align: center; margin-bottom: 3.5rem; }
-.brand-eyebrow {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #9C8468;
-  margin-bottom: 1.2rem;
-  display: block;
-}
-.brand-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.6rem;
-  font-weight: 300;
-  color: #1C1A17;
-  line-height: 1.1;
-  margin-bottom: 0.3rem;
-  letter-spacing: 0.05em;
-}
-.brand-sub {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #B8A48C;
-}
-.divider {
-  width: 48px; height: 1px;
-  background: linear-gradient(90deg, transparent, #B8A48C, transparent);
-  margin: 2rem auto;
-}
-.intro-block {
-  background: #F2EDE5;
-  border-left: 2px solid #C4A882;
-  padding: 1.5rem 1.75rem;
-  border-radius: 0 8px 8px 0;
-  margin-bottom: 2.5rem;
-}
-.intro-block p { font-size: 0.95rem; color: #3D3529; line-height: 1.8; }
-.intro-block strong { font-weight: 500; color: #1C1A17; }
-
-.impact-block { margin-bottom: 3rem; }
-.impact-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.55rem;
-  font-weight: 400;
-  color: #1C1A17;
-  line-height: 1.3;
-  margin-bottom: 0.75rem;
-}
-.impact-title em { font-style: italic; color: #9C8468; }
-.impact-lead { font-size: 0.88rem; color: #7A6F62; margin-bottom: 2rem; line-height: 1.8; }
-.impact-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-@media (max-width: 480px) { .impact-cols { grid-template-columns: 1fr; } }
-.impact-col { border-radius: 10px; padding: 1.25rem 1.25rem 1.5rem; }
-.impact-col.hoje { background: #F5F0EA; border: 0.5px solid #DDD5C8; }
-.impact-col.depois { background: #1C1A17; border: 0.5px solid #3D3529; }
-.col-label {
-  font-size: 0.6rem; font-weight: 500;
-  letter-spacing: 0.25em; text-transform: uppercase;
-  margin-bottom: 1rem; display: block;
-}
-.impact-col.hoje .col-label { color: #B8A48C; }
-.impact-col.depois .col-label { color: #9C8468; }
-.impact-item { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 0.85rem; font-size: 0.82rem; line-height: 1.55; }
-.impact-item:last-child { margin-bottom: 0; }
-.impact-col.hoje .impact-item { color: #7A6F62; }
-.impact-col.depois .impact-item { color: #C4B49E; }
-.dot-neg { width: 6px; height: 6px; border-radius: 50%; background: #C4A882; flex-shrink: 0; margin-top: 6px; opacity: 0.4; }
-.dot-pos { width: 6px; height: 6px; border-radius: 50%; background: #C4A882; flex-shrink: 0; margin-top: 6px; }
-.impact-closing {
-  margin-top: 1.5rem; font-size: 0.85rem; color: #3D3529;
-  font-style: italic; text-align: center; padding: 1rem 1.5rem;
-  border-top: 0.5px solid #E8E2D9; border-bottom: 0.5px solid #E8E2D9;
-}
-.impact-closing strong { font-weight: 500; font-style: normal; color: #1C1A17; }
-
-.section-label {
-  font-size: 0.6rem; font-weight: 500;
-  letter-spacing: 0.3em; text-transform: uppercase;
-  color: #9C8468; margin-bottom: 1.25rem; display: block;
-}
-.section-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem; font-weight: 400;
-  color: #1C1A17; margin-bottom: 1.5rem; line-height: 1.3;
-}
-.deliverables { margin-bottom: 3rem; }
-.deliverable-item { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem 0; border-bottom: 0.5px solid #E8E2D9; }
-.deliverable-item:last-child { border-bottom: none; }
-.check { width: 20px; height: 20px; border-radius: 50%; background: #C4A882; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-.check svg { width: 10px; height: 10px; }
-.deliverable-text strong { display: block; font-size: 0.9rem; font-weight: 500; color: #1C1A17; margin-bottom: 0.2rem; }
-.deliverable-text span { font-size: 0.82rem; color: #7A6F62; line-height: 1.6; }
-
-.pricing-card {
-  background: #1C1A17; border-radius: 16px;
-  padding: 2.5rem 2rem; text-align: center;
-  margin-bottom: 2rem; position: relative; overflow: hidden;
-}
-.pricing-card::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: linear-gradient(90deg, transparent, #C4A882, transparent);
-}
-.pricing-eyebrow { font-size: 0.6rem; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: #9C8468; margin-bottom: 0.75rem; display: block; }
-.pricing-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; color: #F2EDE5; margin-bottom: 1.5rem; font-style: italic; }
-.pricing-amount { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; color: #C4A882; line-height: 1; margin-bottom: 0.5rem; }
-.pricing-amount small { font-size: 1.2rem; vertical-align: super; margin-right: 2px; }
-.pricing-note { font-size: 0.75rem; color: #7A6F62; margin-bottom: 1.5rem; }
-.pricing-divider { width: 40px; height: 0.5px; background: #3D3529; margin: 1.5rem auto; }
-.pricing-info { font-size: 0.8rem; color: #9C8468; letter-spacing: 0.05em; }
-
-.timeline { background: #F2EDE5; border-radius: 12px; padding: 1.5rem 1.75rem; margin-bottom: 3rem; display: flex; align-items: center; gap: 1.25rem; }
-.timeline-icon { width: 40px; height: 40px; border-radius: 50%; background: #C4A882; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.timeline-icon svg { width: 18px; height: 18px; }
-.timeline-text strong { display: block; font-size: 0.85rem; font-weight: 500; color: #1C1A17; margin-bottom: 0.2rem; }
-.timeline-text span { font-size: 0.8rem; color: #7A6F62; }
-
-.next-steps { margin-bottom: 3rem; }
-.step-row { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1rem; }
-.step-num { width: 28px; height: 28px; border: 0.5px solid #C4A882; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; color: #9C8468; flex-shrink: 0; }
-.step-content strong { display: block; font-size: 0.88rem; font-weight: 500; color: #1C1A17; margin-bottom: 0.2rem; }
-.step-content span { font-size: 0.8rem; color: #7A6F62; }
-
-.cta-section { text-align: center; margin-bottom: 3rem; }
-.cta-label { font-size: 0.75rem; color: #B8A48C; margin-bottom: 1.25rem; display: block; font-style: italic; }
-.btn-whatsapp {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
+  background: linear-gradient(180deg, #8b806f, #e8decc, #8b806f, #b3ae9a, #8d8c88);
+  font-family: 'DM Sans', sans-serif;
+  padding: 2rem;
+}
+
+.capa-card {
+  background: #F5F0E8;
+  border-radius: 20px;
+  padding: 3rem 2.5rem 2.5rem;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.18);
+}
+
+.capa-icon {
+  width: 52px;
+  height: 52px;
   background: #1C1A17;
-  color: #F2EDE5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+}
+
+.capa-icon svg { width: 24px; height: 24px; }
+
+.capa-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #1C1A17;
+  line-height: 1.25;
+  margin-bottom: 0.85rem;
+}
+
+.capa-desc {
+  font-size: 0.82rem;
+  color: #7A6F62;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.capa-btn {
+  display: block;
+  background: #1C1A17;
+  color: #F5F0E8;
   text-decoration: none;
-  padding: 1rem 2.5rem;
+  padding: 0.95rem 2rem;
   border-radius: 50px;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
-  border: 0.5px solid #3D3529;
-  transition: background 0.2s, border-color 0.2s;
-  position: relative;
-  overflow: hidden;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 0.2s;
 }
-.btn-whatsapp::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #C4A882, transparent);
-}
-.btn-whatsapp:hover { background: #2C2A27; border-color: #C4A882; }
-.btn-whatsapp svg { width: 18px; height: 18px; flex-shrink: 0; }
 
-.sign-off { text-align: center; padding-top: 2rem; border-top: 0.5px solid #E8E2D9; }
-.sign-name { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: #1C1A17; font-style: italic; margin-bottom: 0.3rem; }
-.sign-role { font-size: 0.7rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: #B8A48C; }
-.validity { margin-top: 1.5rem; font-size: 0.75rem; color: #B8A48C; font-style: italic; }
+.capa-btn:hover { background: #3D3529; }
 </style>
-
-
 </head>
 <body>
-<div class="wrap">
 
-  <div class="header">
-    <span class="brand-eyebrow">Proposta Comercial</span>
-    <div class="brand-name">Solaré Beauty</div>
-    <div class="brand-sub">Página de Vendas · Ebook</div>
-    <div class="divider"></div>
-  </div>
-
-  <div class="intro-block">
-    <p>Olá, <strong>Bruna</strong>! Conforme conversamos, segue a proposta para a criação da página de vendas do seu e-book <strong>"O Guia Essencial para Cabelos Saudáveis em Casa"</strong>. O objetivo é transformar visitantes em compradores de forma estratégica, enquanto você atende no salão.</p>
-  </div>
-
-  <div class="impact-block">
-    <h2 class="impact-title">Seu produto merece mais do que <br> <em>um link na bio</em></h2>
-    <p class="impact-lead">Você criou um produto, um guia completo, com conteúdo real e muito valor. Mas hoje ele está praticamente invisível, ele fica escondido na bio, quem chega no link não entende o que está comprando e sai sem comprar. Uma página de vendas muda isso completamente.</p>
-    <div class="impact-cols">
-      <div class="impact-col hoje">
-        <span class="col-label">Hoje</span>
-        <div class="impact-item"><div class="dot-neg"></div>Link na bio sem contexto</div>
-        <div class="impact-item"><div class="dot-neg"></div>Cliente não entende o valor e sai</div>
-        <div class="impact-item"><div class="dot-neg"></div>Você precisa explicar o produto toda vez</div>
-        <div class="impact-item"><div class="dot-neg"></div>Vendas dependem da sua presença</div>
-        <div class="impact-item"><div class="dot-neg"></div>Difícil de usar em anúncios</div>
-      </div>
-      <div class="impact-col depois">
-        <span class="col-label">Com a página</span>
-        <div class="impact-item"><div class="dot-pos"></div>Destino profissional para qualquer divulgação</div>
-        <div class="impact-item"><div class="dot-pos"></div>Cliente entende o valor e compra</div>
-        <div class="impact-item"><div class="dot-pos"></div>A página explica, convence e vende por você</div>
-        <div class="impact-item"><div class="dot-pos"></div>Vendas acontecem 24h, no automático</div>
-        <div class="impact-item"><div class="dot-pos"></div>Pronta para receber tráfego de anúncios</div>
-      </div>
-    </div>
-    <div class="impact-closing">
-      O link na bio faz as pessoas chegarem. <br> <strong>A página faz elas comprarem.</strong>
-    </div>
-  </div>
-
-  <div class="deliverables">
-    <span class="section-label">O que está incluso</span>
-    <h2 class="section-title">Entregáveis do Projeto</h2>
-    <div class="deliverable-item">
-      <div class="check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#FAFAF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="deliverable-text"><strong>Página de vendas 100% personalizada</strong><span>Com as fotos reais do seu produto, paleta de cores e identidade visual do seu ebook, e textos ajustados para o seu público.</span></div>
-    </div>
-    <div class="deliverable-item">
-      <div class="check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#FAFAF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="deliverable-text"><strong>Integração com a Kiwify</strong><span>Botão de compra conectado diretamente à sua conta, levando o cliente direto para o checkout.</span></div>
-    </div>
-    <div class="deliverable-item">
-      <div class="check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#FAFAF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="deliverable-text"><strong>Pixel do Meta configurado</strong><span>Para que você possa criar anúncios com criativos no Instagram e alcançar novas clientes com muito mais precisão.</span></div>
-    </div>
-    <div class="deliverable-item">
-      <div class="check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#FAFAF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="deliverable-text"><strong>Domínio próprio configurado</strong><span>Sua página no seu próprio endereço na internet, passando mais profissionalismo e confiança na hora da compra.</span></div>
-    </div>
-    <div class="deliverable-item">
-      <div class="check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="#FAFAF7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div class="deliverable-text"><strong>Otimizada para celular</strong><span>Design responsivo para funcionar perfeitamente no smartphone, onde a maioria das suas clientes vai acessar.</span></div>
-    </div>
-  </div>
-
-  <div class="pricing-card">
-    <span class="pricing-eyebrow">Investimento</span>
-    <div class="pricing-title">Página de Vendas Completa</div>
-    <div class="pricing-amount"><small>R$</small>1.200</div>
-    <div class="pricing-note">pagamento único · sem mensalidade</div>
-    <div class="pricing-divider"></div>
-    <div class="pricing-info">50% na aprovação · 50% na entrega</div>
-  </div>
-
-  <div class="timeline">
-    <div class="timeline-icon">
-      <svg viewBox="0 0 18 18" fill="none">
-        <circle cx="9" cy="9" r="7.5" stroke="#FAFAF7" stroke-width="1"/>
-        <path d="M9 5v4l2.5 2.5" stroke="#FAFAF7" stroke-width="1.2" stroke-linecap="round"/>
+  <div class="capa-card">
+    <div class="capa-icon">
+      <svg viewBox="0 0 24 24" fill="none">
+        <rect x="5" y="3" width="14" height="18" rx="2" stroke="#C4A882" stroke-width="1.5"/>
+        <line x1="8" y1="8" x2="16" y2="8" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="8" y1="12" x2="16" y2="12" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="8" y1="16" x2="12" y2="16" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
     </div>
-    <div class="timeline-text">
-      <strong>Entrega em até 10 dias úteis</strong>
-      <span>A partir da aprovação da proposta e envio dos materiais do produto.</span>
-    </div>
-  </div>
-
-  <div class="next-steps">
-    <span class="section-label">Como funciona</span>
-    <h2 class="section-title">Próximos Passos</h2>
-    <div class="step-row">
-      <div class="step-num">1</div>
-      <div class="step-content"><strong>Aprovação da proposta</strong><span>Você confirma e realizamos o pagamento da entrada (50%).</span></div>
-    </div>
-    <div class="step-row">
-      <div class="step-num">2</div>
-      <div class="step-content"><strong>Envio dos materiais</strong><span>Você me envia as fotos reais do produto e acesso ao ebook para ajustar a copy, tipografia e paleta de cores.</span></div>
-    </div>
-    <div class="step-row">
-      <div class="step-num">3</div>
-      <div class="step-content"><strong>Desenvolvimento & revisão</strong><span>Entrego a página para sua aprovação. Ajustes inclusos até você estar satisfeita.</span></div>
-    </div>
-    <div class="step-row">
-      <div class="step-num">4</div>
-      <div class="step-content"><strong>Publicação & entrega</strong><span>Página no ar com domínio e pixel configurados. Pagamento final (50%) e entrega completa.</span></div>
-    </div>
-  </div>
-
-  <div class="cta-section">
-    <span class="cta-label">Ficou com dúvidas ou quer confirmar?</span>
+    <div class="capa-title">Sua proposta está pronta</div>
+    <div class="capa-desc">Clique abaixo para visualizar todos<br>os detalhes da proposta.</div>
     
-    <a class="btn-whatsapp" href="https://wa.me/5511933972932?text=Ol%C3%A1%20Vin%C3%ADcius%2C%20vi%20a%20proposta%20e%20quero%20conversar%20sobre%20a%20p%C3%A1gina%20de%20vendas%21" target="_blank">
-      <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Responder Proposta
-    </a>
+    <a class="capa-btn" href="proposta.html" target="_blank">Ver Proposta</a>
   </div>
 
-  <div class="sign-off">
-    <div class="sign-name">Vinícius</div>
-    <div class="sign-role">Desenvolvedor Web</div>
-    <div class="validity">Proposta válida por 5 dias · Março de 2026</div>
-  </div>
-
-</div>
 </body>
 </html>
